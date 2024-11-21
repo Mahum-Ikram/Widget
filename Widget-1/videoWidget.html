@@ -3,22 +3,117 @@
 
 <head>
     <meta name="google-site-verification" content="RH8BvRObiIV4B_lUPtnaSMHB5cRez6L0kOVODOOdjIw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper scaling on mobile -->
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, main, footer {
+            padding: 20px;
+            margin: 0;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Contact form styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Mobile responsive layout */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            form {
+                padding: 0 10px;
+            }
+        }
+    </style>
     <!-- Start of Zeacon Code -->
-<script type="text/javascript" async="" id="zeacon-sdk" src="https://licencetotest.com/sdk/correlator.js?api-key=da3fb87d-e627-431e-a7c7-63b1003ef440"></script>
-<!-- End of Zeacon Code -->
+    <script type="text/javascript" async="" id="zeacon-sdk"
+        src="https://licencetotest.com/sdk/correlator.js?api-key=da3fb87d-e627-431e-a7c7-63b1003ef440"></script>
+    <!-- End of Zeacon Code -->
 </head>
 
 <body>
     <header>
         <iframe src="https://licencetotest.com/player/5ee4a24c-2bfa-4738-aae0-886224588b89" title="Zeacon | Embed Video"
-            width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe>
+            allowfullscreen="" style="border:0px"></iframe>
+
         <script id="zeacon-sdk-correlation-manager" type="text/javascript"
             src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
 
         <iframe src="https://licencetotest.com/player/42d18fc6-b53c-478d-bf4e-95ff7390faf2" title="Zeacon | Embed Video"
-            width="640px" height="360px" allowfullscreen="" style="border:0px"></iframe>
+            allowfullscreen="" style="border:0px"></iframe>
+
         <script id="zeacon-sdk-correlation-manager" type="text/javascript"
             src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
