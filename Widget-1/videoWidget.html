@@ -3,7 +3,8 @@
 
 <head>
     <meta name="google-site-verification" content="RH8BvRObiIV4B_lUPtnaSMHB5cRez6L0kOVODOOdjIw" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper scaling on mobile -->
+    <!-- Viewport for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Basic Styles */
         body {
@@ -12,19 +13,21 @@
             padding: 0;
         }
 
-        header, main, footer {
+        header {
             padding: 20px;
-            margin: 0;
+            background-color: #f4f4f4;
         }
 
         iframe {
             max-width: 100%;
             height: auto;
+            border: 0;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li {
@@ -35,17 +38,17 @@
         nav ul li a {
             text-decoration: none;
             font-size: 16px;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 14px;
+            color: #333;
         }
 
         /* Contact form styles */
         form {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         label {
@@ -77,6 +80,13 @@
             background-color: #45a049;
         }
 
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            font-size: 14px;
+        }
+
         /* Mobile responsive layout */
         @media (max-width: 768px) {
             nav ul li {
@@ -90,10 +100,15 @@
             }
 
             form {
-                padding: 0 10px;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
             }
         }
     </style>
+
     <!-- Start of Zeacon Code -->
     <script type="text/javascript" async="" id="zeacon-sdk"
         src="https://licencetotest.com/sdk/correlator.js?api-key=da3fb87d-e627-431e-a7c7-63b1003ef440"></script>
@@ -102,14 +117,8 @@
 
 <body>
     <header>
-        <iframe src="https://licencetotest.com/player/5ee4a24c-2bfa-4738-aae0-886224588b89" title="Zeacon | Embed Video"
-            allowfullscreen="" style="border:0px"></iframe>
-
-        <script id="zeacon-sdk-correlation-manager" type="text/javascript"
-            src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
-
         <iframe src="https://licencetotest.com/player/42d18fc6-b53c-478d-bf4e-95ff7390faf2" title="Zeacon | Embed Video"
-            allowfullscreen="" style="border:0px"></iframe>
+            allowfullscreen></iframe>
 
         <script id="zeacon-sdk-correlation-manager" type="text/javascript"
             src="https://licencetotest.com/sdk/correlation-manager/bundle.js"></script>
